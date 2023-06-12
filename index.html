@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <title>FBS Software</title>
+    <script src="main.js"></script>
+</head>
+<body onload="load()">
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2>FBS</h2>
+            </div><!--logo-->
+            <div class="menu">
+                <a href="index.html">
+                    Home 
+                </a>
+                <a href="#sessaoSobre">
+                    Sobre 
+                </a>
+                <a href="#sessaoContato">
+                    Contato 
+                </a>
+            </div><!--menu-->
+        </div><!--center-->
+    </header>
+
+    <section class="main">
+        <div class="center">
+            <div class="main_area">
+                <h2>Softwares com IA</h2>
+                <p>Os nossos principais produtos são: Estoque Farmacêutico e Armazém Lógistico</p>
+            </div><!--main_area-->
+            <div class="cartao-produto">
+                <div class="cartao-tipo">
+                    <i class="fa-solid fa-notes-medical"></i>
+                    <h2>Estoque Farmacêutico</h2>
+                    <p>Aplicação voltada para monitorar o estoque de farmácias e de acordo com as vendas, analisando os clientes, realiza previsões de quais medicamentos precisarão ser reabastecidos e quais não são mais vendidos.</p>
+                </div><!--cartao-tipo-->
+                <div class="cartao-tipo">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <h2>Armazém Logístico</h2>
+                    <p>Aplicação voltada para monitorar as operações de armazens logísticos e visa identificar a alocação de mão obra e apontar os recursos superalocados e subalocados utilizados dados em tempo real.</p>
+                </div><!--cartao-tipo-->
+            </div><!--cartao-produto-->
+        </div><!--center-->
+    </section><!--main-->
+    <br>
+    <section class="sobre">
+        <div class="center">
+            <div class="titulo-sobre">
+                <h2 id="sessaoSobre">Sobre o meu site</h2>
+                <p>Nossa empresa trabalha com o desenvolvimento de softwares com Machine Learning visando realizar predições que auxiliem sua empresa na tomada de decisões.</p>
+            </div><!--titulo-sobre-->
+            <div class="conteudo-sobre">
+                <p>Nossos principais clientes são: Rede de Farmácias JVE, Rede de Farmácias XXE, Rede de Farmácias FNS, Rede de Farmácias CCO, Armazém Logístico XPTO, Armazém Logístico ABC e Armazém Logístico YXZ.
+                </p>
+                <p>O nosso software de Estoque Farmacêutico está no mercado há 6 anos e anualmente o modelo de predição é atualizado. O software para gestão de armazens logísticos está no mercado há 4 anos e o modelo de predição é atualizado a cada 6 meses.</p>
+                <br>
+            </div><!--conteudo-sobre-->
+        </div><!--center-->
+    </section><!--sobre-->
+    <br>
+    <section class="contato">
+        <div class="center">
+            <div class="contato-texto">
+                <h2 id="sessaoContato">Contato</h2>
+                <p>Para entrar em contato conosco preencha os dados abaixo que daremos retorno em até 48h úteis.</p>
+            </div><!--contato-texto-->
+            <br>
+            <div class="conteudoFormulario">
+                <form id="formulario" action="index.html" method="post">
+                    <div class="opcaoFormulario">
+                        <label for="nome">Nome</label>
+                        <input name="nome" required="" type="text">
+                    </div><!--opcaoFormulario-->
+                    <div class="opcaoFormulario">
+                        <label for="email">E-mail:</label>
+                        <input name="email" type="email" required="" id="email" />
+                    </div><!--opcaoFormulario-->
+                    <div class="opcaoFormulario">
+                        <label for="telefone">Telefone:</label>
+                        <input name="telefone" type="Tel" required="" id="telefone" />
+                    </div><!--opcaoFormulario-->
+                    <div class="opcaoFormulario">
+                        <label for="msg">Mensagem:</label>
+                        <textarea name="mensagem" required="" id="msg"></textarea>
+                    </div><!--opcaoFormulario-->
+                    <br>
+                    <div class="botoesFormulario">
+                        <button type="submit">Enviar sua mensagem</button>
+                        <button type="reset">Limpar Campos</button>
+                    </div><!--opcaoFormulario-->
+                </form>
+            </div><!--conteudoFormulario-->
+        </div><!--center-->
+    </section>
+    <footer>
+        <hr>
+        <p>FBS Software</p>
+        <i class="fa-solid fa-envelope"> fulano@gmail.com </i><br>
+        <i class="fa-solid fa-phone"> (48)99999-9999</i>
+    </footer>
+    <script src="https://kit.fontawesome.com/6b6e046d78.js" crossorigin="anonymous"></script>
+</body>
+</html>

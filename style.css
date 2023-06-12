@@ -1,0 +1,243 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Open Sans', sans-serif; 
+}
+
+.center{
+    max-width: 1100px;
+    margin:0 auto;
+    padding:0 2%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #124265;
+}
+
+footer i{
+    font-size: 13px;
+    color: #666;
+    text-transform: lowercase;
+}
+
+.logo{
+    color: #16507b;
+}
+
+.logo h2{
+   font-weight: bold;
+   font-size: 22px;
+}
+
+.menu{
+    width: 80%;
+    text-align: right;
+}
+
+.menu a{
+    color: #124265;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 30px;
+    /*transition: 0.4s;*/
+}
+
+.menu a:hover{
+    color: #007bff;
+}
+
+
+/*
+Section main
+*/
+
+section.main{
+    background-image: url('img/fundo.jpg');
+    padding: 100px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_area{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.main_area h2{
+   color: #16507b;
+   font-size: 40px; 
+
+}
+
+.main_area p{
+   color: #191970;
+   font-size: 19px;
+   margin: 10px 0; 
+   text-align: justify;
+}
+
+ .cartao-produto{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .cartao-tipo{
+    border-radius: 10px;
+    background-color: #ADD8E6;
+    width: 43%;
+    margin-right: 2%;
+    padding: 40px 20px;
+ }
+
+ .cartao-tipo i{
+    color: #124265;
+    font-size: 23px;
+ }
+
+ .cartao-tipo h2{
+    color: #124265;
+    margin: 10px 0;
+    font-size: 18px;
+ }
+
+ .cartao-tipo p{
+    color: #191970;;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 22px;
+ }
+
+ section sobre{
+    padding: 80px 0;
+ }
+
+ .titulo-sobre{
+    width: 100%;
+    text-align: center;
+ } 
+
+.titulo-sobre h2{
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.titulo-sobre p{
+    font-size: 16px;
+    color: #124265;
+    margin: 10px 0;
+    text-align: justify;
+    
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p{
+    width: 48%;
+    margin-right: 2%;
+}
+
+.conteudo-sobre span{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.conteudo-sobre i{
+    color: #007bff;
+}
+
+section contato{
+    background-color: #6A5ACD;
+    padding: 20px 0;
+}
+
+.contato-texto{
+    width: 100%;
+    margin-right: 0%;
+    text-align: center;
+    color: #124265;
+}
+
+.contato-texto h2{
+  font-size: 30px;
+}
+
+.conteudoFormulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-block: 12px;
+}
+
+.opcaoFormulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.opcaoFormulario input{
+    flex: 1;
+    
+}
+
+.opcaoFormulario label{
+    flex: 1;
+}
+
+
+.botoesFormulario button{
+    background-color: #007bff;
+    display: inline-block;
+    padding: 4px 20px;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+    margin-inline: 4px;
+}
+
+.botoesFormulario button:hover{
+    background-color: #124265;
+    color: white;
+ }
+
+ @media screen and (max-width: 768px) {
+    .cartao-tipo{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .conteudo-sobre p{
+        width:100%;
+        margin:20px 20px;
+    }
+ }
